@@ -18,3 +18,11 @@ colors.push("Green");
 colors.push("Red");
 
 console.log('', ...colors)
+
+const numbers = [23, 45, 68, 12, 34, 54, 78, 90];
+const filterNumbers = numbers.filter(number => number % 2 === 0);
+console.log(filterNumbers);
+
+const names = ['Jim', 'Bob', 'Sarah', 'Alex', 'James', 'Sam', 'Peter']
+const filterNames = names.filter(name => name.startsWith("S"))
+console.log(filterNames)
