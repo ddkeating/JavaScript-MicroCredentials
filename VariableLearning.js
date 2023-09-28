@@ -48,3 +48,12 @@ console.log(hogwartsStudents.has("Luna Lovegood"));
 console.log(hogwartsStudents.size);
 
 console.log(hogwartsStudents.delete("Draco Malfoy"));
+
+// Arrow Functions
+
+const FirstIndex = n => {
+    return n[0]
+}
+
+let testList = [1, 5, 2, 1]
+console.log(FirstIndex(testList))
