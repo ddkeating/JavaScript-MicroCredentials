@@ -1,0 +1,7 @@
+{
+    "name": "javascript-microcredentials",
+    "version": "1.0.0",
+    "description": "",
+    "main": "VariableLearning.js",
+    "type": "module"
+}

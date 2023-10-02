@@ -1,3 +1,5 @@
+import { greetNewStaff } from "./ExternalModules/greet.js";
+
 let favoriteFood = 'Sushi'
 let numberOfPieces = 8;
 
@@ -135,5 +137,7 @@ class Clients{
 
 let clients = new Clients(sam, acc)
 clients.displayDetails()
+
+console.log(greetNewStaff(sam.name));
 
 
