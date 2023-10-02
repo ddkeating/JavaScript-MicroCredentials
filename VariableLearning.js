@@ -57,3 +57,83 @@ const FirstIndex = n => {
 
 let testList = [1, 5, 2, 1]
 console.log(FirstIndex(testList))
+
+// Function Linkedin Learning
+
+// Mechanics of Functions
+
+// class Person {
+//     constructor(id, name, contactNumber, emailAddress){
+//         this.id = id;
+//         this.name = name;
+//         this.contactNumber = contactNumber;
+//         this.emailAddress = emailAddress;
+//     }
+
+//     PrintDetails = () => {
+//         return `${this.id}, Name: ${this.name}, Contact Number: ${this.contactNumber}, Email Address: ${this.emailAddress}`
+//     }
+
+    
+// }
+
+// let client1 = new Person(20241, 'Dallas Keating', '+232122332', '123@gmail.com')
+// console.log(client1.PrintDetails())
+
+class Person {
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+
+    Birthday(){
+        this.age = this.age + 1
+        console.log(`Happy Birthday! You are now ${this.age} years old.`)
+    }
+}
+
+let sam = new Person('Sam', 20);
+let alex = new Person('Alex', 43);
+let brent = new Person('Brent', 75);
+
+sam.Birthday();
+alex.Birthday();
+brent.Birthday();
+
+class CreditAccount{
+    constructor(accountNumber){
+        this.accountNumber = accountNumber;
+        this.balance = 0;
+    }
+
+    getBalance(){
+        return `You currently have $${this.balance} in your account.`
+    }
+
+    setBalance(amount){
+        this.balance =+ amount;
+        return `You have added $${amount} to your account.`
+    }
+
+}
+
+let acc = new CreditAccount('23521123');
+console.log(acc.getBalance());
+console.log(acc.setBalance(50));
+console.log(acc.getBalance())
+
+class Clients{
+    constructor(person, account){
+        this.person = person;
+        this.account = account;
+    }
+
+    displayDetails(){
+        console.log(`Name: ${this.person.name}\n${this.account.getBalance()} `)
+    }
+}
+
+let clients = new Clients(sam, acc)
+clients.displayDetails()
+
+
