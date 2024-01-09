@@ -1,0 +1,23 @@
+.App {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 2rem;
+}
+
+#header > img {
+	height: 3em;
+}
+
+#header > p {
+	color: rgb(157, 157, 157);
+	text-align: left;
+}

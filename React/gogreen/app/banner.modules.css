@@ -1,0 +1,18 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1.5rem 0;
+	background-color: #b85050;
+}
+
+.navLink {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
