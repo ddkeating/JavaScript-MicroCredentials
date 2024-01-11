@@ -1,13 +1,38 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0 auto;
+	font-family: "Roboto Condensed", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Main {
+	text-align: center;
+}
+
+.Button-Container {
+	display: grid;
+	margin: 0 auto;
+	width: 90%;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2rem;
+	row-gap: 1rem;
+}
+
+.Random-Button {
+	padding: 1em 1.5em;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.2),
+		0 6px 8px 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid black;
+	border-radius: 15px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.Random-Button:hover {
+	background-color: rgb(238, 238, 238);
+}
+
+.Random-Button:focus {
+	background-color: rgb(53, 53, 53);
+	color: white;
 }
