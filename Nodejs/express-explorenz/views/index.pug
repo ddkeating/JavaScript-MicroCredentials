@@ -1,0 +1,10 @@
+extends ./layout.pug
+
+block content
+    ul 
+        each attraction in touristAttractions 
+            li 
+                h3= attraction.name 
+                p= attraction.description 
+                p strong Category: #{attraction.category.name}
+                img(src=attraction.imageUrl, alt="Tourist Attraction Image", width="200")

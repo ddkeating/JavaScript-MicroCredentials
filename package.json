@@ -3,5 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "VariableLearning.js",
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express-generator": "^4.16.1"
+    }
 }

@@ -1,0 +1,8 @@
+extends ./layout.pug
+
+block content
+    h1= attraction.name 
+    p= attraction.description 
+    p strong Category: #{attraction.category.name}
+    img(src=attraction.imageUrl, alt="Tourist Attraction Image", width="400")
+    

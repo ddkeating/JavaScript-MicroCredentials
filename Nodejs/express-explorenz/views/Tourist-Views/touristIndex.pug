@@ -1,0 +1,8 @@
+extends ../touristLayout.pug
+
+block content 
+    ul 
+        each person in tourist 
+            li 
+                h3= person.name 
+                p= person.email

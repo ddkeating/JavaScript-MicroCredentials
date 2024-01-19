@@ -1,0 +1,40 @@
+.App {
+	margin: 0 auto;
+}
+
+h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 32px;
+}
+
+.btn-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 30%;
+	margin: 2rem auto 0 auto;
+}
+
+.btn-container > button {
+	padding: 2em 2em;
+	background-color: white;
+	border: 3px solid rgb(34, 196, 34);
+	color: rgb(34, 196, 34);
+	font-weight: bold;
+	border-radius: 10px;
+}
+.btn-container > button:last-child {
+	border-color: rgb(168, 50, 50);
+	color: rgb(168, 50, 50);
+}
+
+.btn-container > button:hover {
+	color: white;
+	background-color: rgb(34, 196, 34);
+	cursor: pointer;
+}
+
+.btn-container > button:last-child:hover {
+	background-color: rgb(168, 50, 50);
+}
